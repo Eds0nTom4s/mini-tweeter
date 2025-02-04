@@ -7,7 +7,7 @@ import java.time.Instant;
 
 @Entity
 @Table(name = "tb_tweet")
-public class tweet {
+public class Tweet {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "tweet_id")
@@ -16,13 +16,13 @@ public class tweet {
     @CreationTimestamp
     private Instant creationTimestamp;
 
-    public tweet(Long tweetId, String content, Instant creationTimestamp) {
+    public Tweet(Long tweetId, String content, Instant creationTimestamp) {
         this.tweetId = tweetId;
         this.content = content;
         this.creationTimestamp = creationTimestamp;
     }
 
-    public tweet() {
+    public Tweet() {
 
     }
 
