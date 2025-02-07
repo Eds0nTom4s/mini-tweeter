@@ -12,6 +12,8 @@ public class Role {
     private Long roleId;
     private String name;
 
+
+
     public Role(Long roleId, String name) {
         this.roleId = roleId;
         this.name = name;
@@ -36,6 +38,8 @@ public class Role {
     public void setName(String name) {
         this.name = name;
     }
+
+
     public enum Values{
         BASIC (2L),
         ADMIN(1L);
